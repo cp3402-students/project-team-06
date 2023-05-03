@@ -79,6 +79,7 @@ html {
  */
 body {
 	margin: 0;
+
 }
 
 /**
@@ -86,7 +87,7 @@ body {
  */
 main {
 	display: block;
-	background: red;
+
 }
 
 /**
@@ -473,7 +474,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
+	background: #f1f1ed;
 }
 
 hr {
@@ -651,6 +652,7 @@ textarea {
 .main-navigation {
 	display: block;
 	width: 100%;
+	background: #84898a;
 }
 
 .main-navigation ul {
@@ -695,7 +697,10 @@ textarea {
 
 .main-navigation a {
 	display: block;
+	padding: 10px;
 	text-decoration: none;
+	color: white;
+	transition: background-color 0.3s ease;
 }
 
 /* Small menu. */
@@ -720,7 +725,7 @@ textarea {
 .posts-navigation,
 .site-main
 .post-navigation {
-	margin: 0 0 1.5em;
+	margin: 0 0 5em 2em;
 }
 
 .comment-navigation .nav-links,
@@ -750,7 +755,8 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0 20em 2em;
+	text-align: center;
 }
 
 .updated:not(.published) {
@@ -760,12 +766,12 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.5em 0em 2em;
 }
 
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0 0 5em 2em;
 }
 
 /* Comments
