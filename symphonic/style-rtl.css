@@ -1,15 +1,15 @@
 /*!
 Theme Name: Symphonic
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: https://underscores.me/
+Author: Automattic
+Author URI: https://automattic.com/
+Description: Hi. I'm a starter theme called <code>Symphonic</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: symphonic
+Text Domain: Symphonic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -79,8 +79,6 @@ html {
  */
 body {
 	margin: 0;
-	padding: 4em 12em 4em 12em;
-
 }
 
 /**
@@ -88,7 +86,6 @@ body {
  */
 main {
 	display: block;
-	background: green;
 }
 
 /**
@@ -98,7 +95,6 @@ main {
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
-	color: red;
 }
 
 /* Grouping content
@@ -476,7 +472,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #f1f1ed;
+	background: #fff;
 }
 
 hr {
@@ -488,7 +484,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 3em 1.5em 0;
 }
 
 ul {
@@ -502,7 +498,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 dt {
@@ -654,34 +650,33 @@ textarea {
 .main-navigation {
 	display: block;
 	width: 100%;
-	background: #84898a;
 }
 
 .main-navigation ul {
 	display: none;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding-right: 0;
 }
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
+	float: right;
 	position: absolute;
 	top: 100%;
-	left: -999em;
+	right: -999em;
 	z-index: 99999;
 }
 
 .main-navigation ul ul ul {
-	left: -999em;
+	right: -999em;
 	top: 0;
 }
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
 	display: block;
-	left: auto;
+	right: auto;
 }
 
 .main-navigation ul ul a {
@@ -690,7 +685,7 @@ textarea {
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	left: auto;
+	right: auto;
 }
 
 .main-navigation li {
@@ -699,10 +694,7 @@ textarea {
 
 .main-navigation a {
 	display: block;
-	padding: 10px;
 	text-decoration: none;
-	color: white;
-	transition: background-color 0.3s ease;
 }
 
 /* Small menu. */
@@ -727,7 +719,7 @@ textarea {
 .posts-navigation,
 .site-main
 .post-navigation {
-	margin: 0 0 5em 2em;
+	margin: 0 0 1.5em;
 }
 
 .comment-navigation .nav-links,
@@ -757,8 +749,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 20em 2em;
-	text-align: center;
+	margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
@@ -768,12 +759,12 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0em 2em;
+	margin: 1.5em 0 0;
 }
 
 .page-links {
 	clear: both;
-	margin: 0 0 5em 2em;
+	margin: 0 0 1.5em;
 }
 
 /* Comments
@@ -821,8 +812,8 @@ textarea {
 
 .wp-caption img[class*="wp-image-"] {
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 .wp-caption .wp-caption-text {
@@ -933,7 +924,7 @@ textarea {
 	font-size: 0.875rem;
 	font-weight: 700;
 	height: auto;
-	left: 5px;
+	right: 5px;
 	line-height: normal;
 	padding: 15px 23px 14px;
 	text-decoration: none;
@@ -950,21 +941,13 @@ textarea {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
-
-	/*rtl:ignore*/
 	float: left;
-
-	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
-
-	/*rtl:ignore*/
 	float: right;
-
-	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
 }
@@ -972,7 +955,7 @@ textarea {
 .aligncenter {
 	clear: both;
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 1.5em;
 }
