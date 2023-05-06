@@ -1,15 +1,15 @@
 /*!
 Theme Name: Symphonic
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: https://underscores.me/
+Author: Automattic
+Author URI: https://automattic.com/
+Description: Hi. I'm a starter theme called <code>Symphonic</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: symphonic
+Text Domain: Symphonic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -79,8 +79,6 @@ html {
  */
 body {
 	margin: 0;
-
-
 }
 
 /**
@@ -88,7 +86,6 @@ body {
  */
 main {
 	display: block;
-	color: #1c1b1b;
 }
 
 /**
@@ -475,7 +472,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #f1f1ed;
+	background: #fff;
 }
 
 hr {
@@ -487,7 +484,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 3em 1.5em 0;
 }
 
 ul {
@@ -501,7 +498,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 dt {
@@ -651,68 +648,53 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-}
-
-.main-navigation a {
 	display: block;
-	text-decoration: none;
-	color: #333;
-	padding: 1rem;
-	transition: background-color 0.3s ease;
-}
-
-.main-navigation a:hover {
-	color: #fff;
-	background-color: #333;
+	width: 100%;
 }
 
 .main-navigation ul {
+	display: none;
 	list-style: none;
 	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
+	padding-right: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: right;
+	position: absolute;
+	top: 100%;
+	right: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	right: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	display: block;
+	right: auto;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	right: auto;
 }
 
 .main-navigation li {
 	position: relative;
 }
 
-.main-navigation ul ul {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	display: none;
-	padding: 0;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	z-index: 999;
-}
-
-.main-navigation ul ul li {
-	width: 100%;
-}
-
-.main-navigation ul ul a {
-	padding: 1rem;
-}
-
-.main-navigation li:hover > ul,
-.main-navigation li:focus > ul {
+.main-navigation a {
 	display: block;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li:focus > ul {
-	display: block;
-	left: 100%;
-	top: 0;
+	text-decoration: none;
 }
 
 /* Small menu. */
@@ -737,14 +719,13 @@ textarea {
 .posts-navigation,
 .site-main
 .post-navigation {
-	margin: 0 0 5em 2em;
+	margin: 0 0 1.5em;
 }
 
 .comment-navigation .nav-links,
 .posts-navigation .nav-links,
 .post-navigation .nav-links {
 	display: flex;
-
 }
 
 .comment-navigation .nav-previous,
@@ -768,8 +749,7 @@ textarea {
 
 .post,
 .page {
-
-	text-align: center;
+	margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
@@ -779,13 +759,12 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 30em 2em;
+	margin: 1.5em 0 0;
 }
 
 .page-links {
 	clear: both;
-
-	margin: 0 0 5em 2em;
+	margin: 0 0 1.5em;
 }
 
 /* Comments
@@ -813,7 +792,7 @@ textarea {
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-
+	border: none;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
@@ -833,8 +812,8 @@ textarea {
 
 .wp-caption img[class*="wp-image-"] {
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 .wp-caption .wp-caption-text {
@@ -945,7 +924,7 @@ textarea {
 	font-size: 0.875rem;
 	font-weight: 700;
 	height: auto;
-	left: 5px;
+	right: 5px;
 	line-height: normal;
 	padding: 15px 23px 14px;
 	text-decoration: none;
@@ -962,21 +941,13 @@ textarea {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
-
-	/*rtl:ignore*/
 	float: left;
-
-	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
-
-	/*rtl:ignore*/
 	float: right;
-
-	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
 }
@@ -984,7 +955,7 @@ textarea {
 .aligncenter {
 	clear: both;
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 1.5em;
 }
