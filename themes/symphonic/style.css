@@ -79,7 +79,7 @@ html {
  */
 body {
 	margin: 0;
-	padding: 4em 12em 4em 12em;
+
 
 }
 
@@ -88,7 +88,7 @@ body {
  */
 main {
 	display: block;
-	background: black;
+	color: #1c1b1b;
 }
 
 /**
@@ -651,57 +651,68 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.main-navigation a {
 	display: block;
-	width: 100%;
-	background: #84898a;
+	text-decoration: none;
+	color: #333;
+	padding: 1rem;
+	transition: background-color 0.3s ease;
+}
+
+.main-navigation a:hover {
+	color: #fff;
+	background-color: #333;
 }
 
 .main-navigation ul {
-	display: none;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	display: block;
-	left: auto;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
+	padding: 0;
+	display: flex;
+	align-items: center;
 }
 
 .main-navigation li {
 	position: relative;
 }
 
-.main-navigation a {
+.main-navigation ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	padding: 0;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+}
+
+.main-navigation ul ul li {
+	width: 100%;
+}
+
+.main-navigation ul ul a {
+	padding: 1rem;
+}
+
+.main-navigation li:hover > ul,
+.main-navigation li:focus > ul {
 	display: block;
-	padding: 10px;
-	text-decoration: none;
-	color: white;
-	transition: background-color 0.3s ease;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li:focus > ul {
+	display: block;
+	left: 100%;
+	top: 0;
 }
 
 /* Small menu. */
@@ -733,6 +744,7 @@ textarea {
 .posts-navigation .nav-links,
 .post-navigation .nav-links {
 	display: flex;
+
 }
 
 .comment-navigation .nav-previous,
@@ -756,7 +768,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 20em 2em;
+
 	text-align: center;
 }
 
@@ -767,11 +779,12 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0em 2em;
+	margin: 1.5em 30em 2em;
 }
 
 .page-links {
 	clear: both;
+
 	margin: 0 0 5em 2em;
 }
 
@@ -800,7 +813,7 @@ textarea {
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-	border: none;
+
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
