@@ -55,34 +55,5 @@
                 )
             );
             ?>
-            <ul class="sub-menu">
-                <li><a href="#">Links</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
         </nav><!-- #site-navigation -->
-
-
-        <!-- Add mobile navigation menu -->
-        <div class="mobile-navigation">
-            <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'menu-1',
-                    'menu_id'        => 'mobile-menu',
-                    'fallback_cb'    => 'my_fallback_menu',
-                )
-            );
-            ?>
-        </div>
-
     </header><!-- #masthead -->
-
-    <!-- Add JavaScript to toggle mobile navigation menu -->
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const mobileNav = document.querySelector('.mobile-navigation');
-
-        menuToggle.addEventListener('click', () => {
-            mobileNav.classList.toggle('open');
-        });
-    </script>
