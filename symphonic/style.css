@@ -74,20 +74,34 @@ html {
 /* Sections
     ========================================================================== */
 
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 30px;
+}
+
 /**
  * Remove the margin in all browsers.
  */
 body {
-	margin: 0;
+	display: flex;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
 
 }
 
 /**
  * Render the `main` element consistently in IE.
  */
+
 main {
 	display: block;
-
+	margin-left: 10%;
+	margin-right: 80%;
 }
 
 /**
@@ -97,6 +111,12 @@ main {
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
+	color: purple;
+}
+
+p {
+	margin-bottom: 1.5em;
+	text-align: left;
 }
 
 /* Grouping content
@@ -419,10 +439,6 @@ h6 {
 	clear: both;
 }
 
-p {
-	margin-bottom: 1.5em;
-}
-
 dfn,
 cite,
 em,
@@ -655,6 +671,7 @@ textarea {
 	justify-content: space-between;
 	background: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 
 }
 
