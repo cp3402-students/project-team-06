@@ -26,27 +26,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Generic
-	- Normalize
-	- Box sizing
+   - Normalize
+   - Box sizing
 # Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
+   - Typography
+   - Elements
+   - Links
+   - Forms
 ## Layouts
 # Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
+   - Navigation
+   - Posts and pages
+   - Comments
+   - Widgets
+   - Media
+   - Captions
+   - Galleries
 # plugins
-	- Jetpack infinite scroll
+   - Jetpack infinite scroll
 # Utilities
-	- Accessibility
-	- Alignments
+   - Accessibility
+   - Alignments
 
 --------------------------------------------------------------*/
 
@@ -60,7 +60,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
-	 ========================================================================== */
+    ========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -72,14 +72,13 @@ html {
 }
 
 /* Sections
-	 ========================================================================== */
+    ========================================================================== */
 
 /**
  * Remove the margin in all browsers.
  */
 body {
 	margin: 0;
-	padding: 4em 12em 4em 12em;
 
 }
 
@@ -88,7 +87,7 @@ body {
  */
 main {
 	display: block;
-	color: red;
+
 }
 
 /**
@@ -101,7 +100,7 @@ h1 {
 }
 
 /* Grouping content
-	 ========================================================================== */
+    ========================================================================== */
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -123,7 +122,7 @@ pre {
 }
 
 /* Text-level semantics
-	 ========================================================================== */
+    ========================================================================== */
 
 /**
  * Remove the gray background on active links in IE 10.
@@ -139,7 +138,7 @@ a {
 abbr[title] {
 	border-bottom: none;
 	text-decoration: underline;
-	text-decoration: underline dotted;
+
 }
 
 /**
@@ -189,7 +188,7 @@ sup {
 }
 
 /* Embedded content
-	 ========================================================================== */
+    ========================================================================== */
 
 /**
  * Remove the border on images inside links in IE 10.
@@ -199,7 +198,7 @@ img {
 }
 
 /* Forms
-	 ========================================================================== */
+    ========================================================================== */
 
 /**
  * 1. Change the font styles in all browsers.
@@ -276,7 +275,7 @@ fieldset {
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
- *		`fieldset` elements in all browsers.
+ *    `fieldset` elements in all browsers.
  */
 legend {
 	box-sizing: border-box;
@@ -345,7 +344,7 @@ textarea {
 }
 
 /* Interactive
-	 ========================================================================== */
+    ========================================================================== */
 
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
@@ -362,7 +361,7 @@ summary {
 }
 
 /* Misc
-	 ========================================================================== */
+    ========================================================================== */
 
 /**
  * Add the correct display in IE 10+.
@@ -651,64 +650,70 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.main-navigation a {
 	display: block;
-	width: 100%;
-	background: #84898a;
+	text-decoration: none;
+	color: #333;
+	padding: 1rem;
+	transition: background-color 0.3s ease;
+}
+
+.main-navigation a:hover {
+	color: #fff;
+	background-color: #333;
 }
 
 .main-navigation ul {
-	display: none;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	display: block;
-	left: auto;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
+	padding: 0;
+	display: flex;
+	align-items: center;
 }
 
 .main-navigation li {
 	position: relative;
 }
 
-.main-navigation a {
-	display: block;
-	padding: 10px;
-	text-decoration: none;
-	color: white;
-	transition: background-color 0.3s ease;
+.main-navigation ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	padding: 0;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 999;
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation ul ul li {
+	width: 100%;
+}
+
+.main-navigation ul ul a {
+	padding: 1rem;
+}
+
+.main-navigation li:hover > ul,
+.main-navigation li:focus > ul {
 	display: block;
 }
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li:focus > ul {
+	display: block;
+	left: 100%;
+	top: 0;
+}
+
 
 @media screen and (min-width: 37.5em) {
 
@@ -722,9 +727,9 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
+.site-main,
 .posts-navigation,
-.site-main
+.site-main,
 .post-navigation {
 	margin: 0 0 5em 2em;
 }
@@ -756,7 +761,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 20em 2em;
+
 	text-align: center;
 }
 
@@ -975,3 +980,4 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
