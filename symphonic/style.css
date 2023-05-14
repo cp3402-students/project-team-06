@@ -82,9 +82,8 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*margin-left: 10%;*/
-	/*margin-right: 10%;*/
-	padding-top: 30px;
+	padding-top: 50px;
+	background: lightcoral;
 }
 
 /**
@@ -95,8 +94,6 @@ body {
 	justify-content: center;
 	margin-left: 20%;
 	margin-right: 20%;
-
-
 }
 
 /**
@@ -105,8 +102,9 @@ body {
 
 main {
 	display: block;
-	/*margin-left: 10%;*/
-	/*margin-right: 10%;*/
+	background: lightblue;
+
+
 }
 
 /**
@@ -156,13 +154,135 @@ p {
 	text-decoration: none;
 }
 
+
+/* Navigation
+--------------------------------------------- */
+.main-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 1rem;
+	transition: background-color 0.3s ease;
+}
+
+.main-navigation a:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.main-navigation ul li{
+	display: inline-block;
+	position: relative;
+}
+
+.main-navigation ul li a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #333;
+}
+
+
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	padding: 0;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+}
+
+.main-navigation ul ul li {
+	width: 100%;
+}
+
+.main-navigation ul ul a {
+	padding: 1rem;
+}
+
+.main-navigation li:hover > ul,
+.main-navigation li:focus > ul {
+	display: block;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li:focus > ul {
+	display: block;
+	left: 100%;
+	top: 0;
+}
+
+
+@media screen and (min-width: 37.5em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main,
+.posts-navigation,
+.site-main,
+.post-navigation {
+	margin: 0 0 5em 2em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+	display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	text-align: end;
+	flex: 1 0 50%;
+}
+
 /* Footer CSS
 --------------------------------------------- */
 
 .footer-basic {
 	padding:40px 0;
-	background-color:#000000;
-	color:#ffffff;
+	background-color:#B58766;
+	color: #ffffff;
 }
 
 .footer-basic ul {
@@ -181,7 +301,7 @@ p {
 .footer-basic ul a {
 	color:inherit;
 	text-decoration:none;
-	opacity:0.8;
+	/*opacity:0.8;*/
 }
 
 .footer-basic ul a:hover {
@@ -200,11 +320,11 @@ p {
 	line-height:40px;
 	display:inline-block;
 	text-align:center;
-	border-radius:50%;
-	border:1px solid #ccc;
+	/*border-radius:50%;*/
+	/*border:1px solid #ccc;*/
 	margin:0 8px;
 	color:inherit;
-	opacity:0.75;
+	/*opacity:0.75;*/
 }
 
 .footer-basic .social > a:hover {
@@ -215,9 +335,10 @@ p {
 	margin-top:15px;
 	text-align:center;
 	font-size:13px;
-	color:#aaa;
+	color: #ffffff;
 	margin-bottom:0;
 }
+
 
 
 input[type="file"] {
@@ -796,113 +917,6 @@ textarea {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-
-/* Navigation
---------------------------------------------- */
-.main-navigation {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-	color: #333;
-	padding: 1rem;
-	transition: background-color 0.3s ease;
-}
-
-.main-navigation a:hover {
-	color: #fff;
-	background-color: #333;
-}
-
-.main-navigation ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-}
-
-.main-navigation li {
-	position: relative;
-}
-
-.main-navigation ul ul {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	display: none;
-	padding: 0;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	z-index: 999;
-}
-
-.main-navigation ul ul li {
-	width: 100%;
-}
-
-.main-navigation ul ul a {
-	padding: 1rem;
-}
-
-.main-navigation li:hover > ul,
-.main-navigation li:focus > ul {
-	display: block;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li:focus > ul {
-	display: block;
-	left: 100%;
-	top: 0;
-}
-
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}
-
-.site-main .comment-navigation,
-.site-main,
-.posts-navigation,
-.site-main,
-.post-navigation {
-	margin: 0 0 5em 2em;
-}
-
-.comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
-	display: flex;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	flex: 1 0 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	text-align: end;
-	flex: 1 0 50%;
-}
 
 /* Posts and pages
 --------------------------------------------- */
