@@ -74,7 +74,7 @@ html {
 /* Sections
     ========================================================================== */
 
-.page-title {
+.entry-title {
 	display: none;
 }
 
@@ -96,6 +96,7 @@ body {
 	margin-left: 20%;
 	margin-right: 20%;
 
+
 }
 
 /**
@@ -104,27 +105,38 @@ body {
 
 main {
 	display: block;
-	margin-left: 10%;
-	margin-right: 10%;
+	/*margin-left: 10%;*/
+	/*margin-right: 10%;*/
 }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h2 {
-	font-family: BACKCOUNTRY, sans-serif;
-	font-size: 24px;
+
+h1 {
+	font-family: Duality, sans-serif;
+	font-size: 30px;
 	font-weight: bold;
 	line-height: 1.2;
-	color: #333333;
+	color: #712320;
 	margin-bottom: 20px;
 	text-align: left;
 }
 
 h2 {
-	font-family: BACKCOUNTRY, sans-serif;
+	font-family: Duality, sans-serif;
 	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #712320;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+h3 {
+	font-family: Georgia, sans-serif;
+	font-size: 20px;
 	font-weight: bold;
 	line-height: 1.2;
 	color: #712320;
@@ -142,6 +154,69 @@ p {
 	padding: 0;
 	color: #333333;
 	text-decoration: none;
+}
+
+/* Footer CSS
+--------------------------------------------- */
+
+.footer-basic {
+	padding:40px 0;
+	background-color:#000000;
+	color:#ffffff;
+}
+
+.footer-basic ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+}
+
+.footer-basic li {
+	padding:0 10px;
+}
+
+.footer-basic ul a {
+	color:inherit;
+	text-decoration:none;
+	opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+	opacity:1;
+}
+
+.footer-basic .social {
+	text-align:center;
+	padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+	font-size:24px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:1px solid #ccc;
+	margin:0 8px;
+	color:inherit;
+	opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+	opacity:0.9;
+}
+
+.footer-basic .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
 }
 
 
@@ -610,17 +685,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #712320;
 }
 
 a:visited {
-	color: #800080;
+	color: #712320;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #712320;
 }
 
 a:focus {
@@ -962,69 +1037,6 @@ textarea {
 .gallery-caption {
 	display: block;
 }
-
-/* Footer CSS
---------------------------------------------- */
-
-.footer-basic {
-	padding:40px 0;
-	background-color:#000000;
-	color:#ffffff;
-  }
-  
-  .footer-basic ul {
-	padding:0;
-	list-style:none;
-	text-align:center;
-	font-size:18px;
-	line-height:1.6;
-	margin-bottom:0;
-  }
-  
-  .footer-basic li {
-	padding:0 10px;
-  }
-  
-  .footer-basic ul a {
-	color:inherit;
-	text-decoration:none;
-	opacity:0.8;
-  }
-  
-  .footer-basic ul a:hover {
-	opacity:1;
-  }
-  
-  .footer-basic .social {
-	text-align:center;
-	padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-	font-size:24px;
-	width:40px;
-	height:40px;
-	line-height:40px;
-	display:inline-block;
-	text-align:center;
-	border-radius:50%;
-	border:1px solid #ccc;
-	margin:0 8px;
-	color:inherit;
-	opacity:0.75;
-  }
-  
-  .footer-basic .social > a:hover {
-	opacity:0.9;
-  }
-  
-  .footer-basic .copyright {
-	margin-top:15px;
-	text-align:center;
-	font-size:13px;
-	color:#aaa;
-	margin-bottom:0;
-  }
 
 /*--------------------------------------------------------------
 # Plugins
