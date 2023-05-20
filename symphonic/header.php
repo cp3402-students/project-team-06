@@ -16,6 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">-->
+
 
 	<?php wp_head(); ?>
 </head>
@@ -26,15 +29,12 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'symphonic' ); ?></a>
 
-<!--	<div class="website-title">-->
-<!--		<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION</h1>-->
-<!--	</div>-->
-
 	<header id="masthead" class="site-header">
+<!--		<div class="site-top-bar">-->
+<!--			<div class="social"><a href="#">-->
+<!--					<i class="icon ion-social-facebook"></i></a></div>-->
+<!--		</div>-->
 
-		<div class="logo">
-			<img src="app/public/wp-content/images/Club Logo.... .png" alt="Logo">
-		</div>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
