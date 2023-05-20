@@ -26,21 +26,27 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'symphonic' ); ?></a>
 
-	<div class="website-title">
-		<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION</h1>
-	</div>
+<!--	<div class="website-title">-->
+<!--		<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION</h1>-->
+<!--	</div>-->
 
 	<header id="masthead" class="site-header">
+
+		<div class="logo">
+			<img src="app/public/wp-content/images/Club Logo.... .png" alt="Logo">
+		</div>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-<!--				<h1 class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
+				<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION
+				</h1>
 				<?php
 			else :
 				?>
-<!--				<p class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></p>-->
+				<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION
+				</h1>
 				<?php
 			endif;
 			$symphonic_description = get_bloginfo( 'description', 'display' );
