@@ -26,6 +26,10 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'symphonic' ); ?></a>
 
+	<div class="website-title">
+		<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION</h1>
+	</div>
+
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php

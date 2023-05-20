@@ -20,6 +20,27 @@ if ( ! defined( '_S_VERSION' ) ) {
  * as indicating support for post thumbnails.
  */
 
+function display_custom_field_data_in_content($content) {
+    if (is_singular('post')) {
+        $entry_id = get_post_meta(get_the_ID(), '_frm_entry_id', true);
+        $custom_data = FrmEntryMeta::get_entry_meta_value($entry_id, 'EventForm');
+
+        if ($custom_data) {
+            $content .= '<p>' . esc_html($custom_data) . '</p>';
+        }
+    }
+
+    return $content;
+}
+add_filter('the_content', 'display_custom_field_data_in_content');
+
+function enqueue_custom_styles(): void
+{
+    wp_enqueue_style( 'custom-styles', get_stylesheet_directory_uri() . '/custom-style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_custom_styles' );
+
+
 function symphonic_setup() {
 	/*
 		* Make theme available for translation.
