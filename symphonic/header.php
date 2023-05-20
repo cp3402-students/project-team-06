@@ -16,6 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">-->
+
 
 	<?php wp_head(); ?>
 </head>
@@ -27,16 +30,23 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'symphonic' ); ?></a>
 
 	<header id="masthead" class="site-header">
+<!--		<div class="site-top-bar">-->
+<!--			<div class="social"><a href="#">-->
+<!--					<i class="icon ion-social-facebook"></i></a></div>-->
+<!--		</div>-->
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-<!--				<h1 class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
+				<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION
+				</h1>
 				<?php
 			else :
 				?>
-<!--				<p class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></p>-->
+				<h1>TOWNSVILLE & THURINGOWA COUNTRY MUSIC ASSOCIATION
+				</h1>
 				<?php
 			endif;
 			$symphonic_description = get_bloginfo( 'description', 'display' );
