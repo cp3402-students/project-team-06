@@ -29,9 +29,11 @@
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="/Home/"</a>Home</li>
                 <li class="list-inline-item"><a href="/about-the-association/">About</a></li>
+                <li class="list-inline-item"><a href="/links/">Links</a></li>
                 <li class="list-inline-item"><a href="/events-information/">Events</a></li>
                 <li class="list-inline-item"><a href="/monthly-magazine-2/">Monthly Magazine</a></li>
                 <li class="list-inline-item"><a href="/photo-gallery/">Photo Gallery</a></li>
+                <li class="list-inline-item"><a href="/contact-us/">Contact</a></li>
 
             </ul>
             <p class="copyright">Townsville & Thuringowa Country Music Associations © 2023. All Rights Reserved. </p>
