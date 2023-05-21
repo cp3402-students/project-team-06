@@ -9,7 +9,7 @@ This is the repository for a Content Management Project that makes use of a cust
 ## Repository Contents
 The repository's files are listed below, along with information about them including links to more information.
 
-[a2.html](https://web-eau.net/en/blog/10-best-footer-html-css-snippets): This is our HTML file, which includes links to our website pages, our collaboration platforms, and this repository.
+[a2.html](https://github.com/cp3402-students/project-team-06/blob/main/a2.html): This is our HTML file, which includes links to our website pages, our collaboration platforms, and this repository.
 
 [deployment.md](https://github.com/cp3402-students/project-team-06/blob/main/deployment.md): This site's local development and deployment are summarised in this deployment documentation.
 
