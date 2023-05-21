@@ -66,6 +66,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -77,39 +78,42 @@ html {
 	box-sizing: border-box;
 }
 
-/*.site-top-bar {*/
-/*	display: flex;*/
-/*	background-color: #712320;*/
-/*	padding-top: 10px;*/
-/*	padding-bottom: 10px;*/
-/*	justify-content: right;*/
-/*	padding-right: 10%;*/
-
-/*}*/
-
-/*.social {*/
-/*	list-style: none;*/
-/*	padding: 0;*/
-/*	margin: 0;*/
-/*}*/
-
-/*.social a {*/
-/*	display: inline-block;*/
-/*	margin-right: 15px;*/
-/*	color: #FFFFFF;*/
-/*	text-decoration: none;*/
-/*	font-size: 35px;*/
-/*	justify-content: right;*/
-/*}*/
-
-/*.social a:hover {*/
-/*	color: #6C928F;*/
-/*}*/
-
-
-
 /* Sections
     ========================================================================== */
+
+.top-bar-container {
+	display: flex;
+	background-color: #cf8f2f;
+}
+
+.top-bar-space {
+	flex: 1;
+	width: 33%;
+	display: flex;
+	justify-content: center;
+}
+
+.social-links {
+	flex: 1;
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	letter-spacing: 30px;
+}
+
+.social-links a:hover {
+	color: #032737;
+}
+
+
+.top-bar-site-title {
+	flex: 1;
+	width: 33%;
+	display: flex;
+	justify-content: center;
+
+}
 
 .entry-title {
 	display: none;
@@ -126,15 +130,17 @@ html {
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 50px;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 3); /* Adjust the shadow values as needed */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
 	margin-left: 20%;
 	margin-right: 20%;
 	letter-spacing: 5px;
+
 }
 
 header {
 	width: 100%;
 }
+
 
 /**
  * Remove the margin in all browsers.
@@ -167,7 +173,7 @@ h1 {
 	font-size: 75px;
 	font-weight: bold;
 	line-height: 1.2;
-	color: #712320 ;
+	color: #cf8f2f ;
 	margin-bottom: 20px;
 	text-align: left;
 	letter-spacing: 5px;
@@ -179,7 +185,7 @@ h2 {
 	font-size: 50px;
 	font-weight: bold;
 	line-height: 1.2;
-	color: #C2A03D ;
+	color: #cf8f2f ;
 	margin-bottom: 20px;
 	text-align: left;
 	letter-spacing: 5px;
@@ -191,7 +197,7 @@ h3 {
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 1.2;
-	color: #712320;
+	color: #cf8f2f;
 	margin-bottom: 20px;
 	text-align: left;
 	letter-spacing: 2px;
@@ -200,14 +206,15 @@ h3 {
 }
 
 h4 {
-	font-family: Georgia, sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #FFFFFF;
 	text-align: left;
-	letter-spacing: 2px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	font-family: Duality, sans-serif;
+	letter-spacing: 5px;
+
 
 }
 
@@ -246,7 +253,7 @@ p {
 }
 
 .main-navigation a:hover {
-	color: #712320;
+	color: #cf8f2f;
 }
 
 .main-navigation ul li{
@@ -287,7 +294,7 @@ p {
 }
 
 .main-navigation li ul li a:hover {
-	color: #6C928F;
+	color: #032737;
 }
 
 
@@ -311,7 +318,7 @@ p {
 	display: none;
 	color: #FFFFFF;
 	padding: 5px;
-	background-color: #712320;
+	background-color: #cf8f2f;
 }
 
 .main-navigation ul ul li {
@@ -362,7 +369,7 @@ p {
 --------------------------------------------- */
 
 .footer-basic {
-	background-color: #712320;
+	background-color: #cf8f2f;
 	border-top: 3px solid #FFFFFF;
 	display: flex;
 	justify-content: center;
@@ -401,7 +408,7 @@ p {
 
 .footer-basic ul a:hover {
 	opacity:1;
-	color: #6C928F;
+	color: #032737;
 }
 
 .footer-basic .copyright {
@@ -581,9 +588,9 @@ img {
 	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
-	background-color: #712320;
+	background-color: #cf8f2f;
 	color: #FFFFFF;
-	border: 2px solid #712320;
+	border: 2px solid #cf8f2f;
 	cursor: pointer;
 	justify-content: center;
 	text-transform: uppercase;
@@ -592,17 +599,13 @@ img {
 }
 
 .button:hover {
-	background-color: #712320;
+	background-color: #cf8f2f;
 	border: 2px solid #FFFFFF;
 
 }
 
 .button:focus {
 	outline: none;
-}
-
-.button:active {
-	background-color: #3e8e41;
 }
 
 

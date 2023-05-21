@@ -16,6 +16,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
 
 
 	<?php wp_head(); ?>
@@ -27,7 +31,20 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'symphonic' ); ?></a>
 
+
 	<header id="masthead" class="site-header">
+
+		<div class="top-bar-container">
+			<div class="top-bar-space">
+			</div>
+			<div class="top-bar-site-title"><h4>TTCMA</h4>
+			</div>
+			<div class="social-links">
+				<a href="https://www.facebook.com/TownsvilleCountryMusic"><i class="icon ion-social-facebook"></i></a>
+				<a href="mailto:ttcma2018@gmail.com"><i class="fa fa fa-envelope"></i></a>
+			</div>
+			</div>
+
 
 		<div class="site-branding">
 
