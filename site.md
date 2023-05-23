@@ -33,11 +33,11 @@ The site contains
 - Monthly Magazine: This page displays the latest magazines and provides archived magazines
 - Photo Gallery : Provide a gallery of images related to past events
 
-Adding an Event Post using Formidable Forms
+Adding an Event Post using Event Manager
 -------------------------------------------
 Log in to the WordPress admin dashboard.
-Click on "Formidable" on the left-hand side to access the Formidable Forms plugin.
-Choose the form specifically designed for creating event posts.
+Click on "Events" on the left-hand side to access the Event Manager Forms plugin.
+Either choose or edit the event specifically.
 Fill in the required fields such as event title, date, time, location, description, and any other necessary information.
-Submit the form to create a new event post.
-The new event post will be automatically published on the site.
+Submit the event to create a new event post on the events page.
+The new event post will be automatically published on the events page on the site.
